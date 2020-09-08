@@ -1,25 +1,20 @@
 # Hello World
 
-First I coded a web api with Python with Flask module and uploaded it into github repo.
-
+## Web Api
+First I coded a web api with Python using Flask and uploaded it into github repo.
 Application runs on localhost:8080 port and has 2 URLs. 
-
     - Default root URL returns a "Hello".
     - '/heathz' returns the status, version and uptime of api. 
 
-[Here my script](https://github.com/aykseldi/Docker_Study/blob/master/helloworld.py)
+[Here my script of web api](https://github.com/aykseldi/Docker_Study/blob/master/helloworld.py)
 
-3. What other information would you add to health endpoint json object in step 2? Explain what would be the use case
-for that extra information?
-
+## What can be added on an API endpoint?
 In an API, developer can expose only objects or actions that is needed. 
-
 If we are tracking application status, we may also database status, server loads, average connection requests, last api request ip etc. 
-
 It totaly depends on what kind of information you want to show.
 
-4. Create a docker file to build, package, deploy, and run this application locally with Docker. 
-First I created a docker file. [Here my Docker File](https://github.com/aykseldi/Docker_Study/blob/master/dockerfile)
+## Dockerization of the Application
+* First I created a docker file. [Here my Docker File](https://github.com/aykseldi/Docker_Study/blob/master/dockerfile)
 
 I used Ubuntu 16.04 as base image to run my application.
 In the Docker file, first I instructed to run update and then install python development environment. Also for python installed needed libraries. 
