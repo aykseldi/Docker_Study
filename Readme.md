@@ -34,10 +34,13 @@ d12016fb42ce        hello               "python helloworld.py"   2 hours ago    
 ```
 
   ## CICD
+
+  For a bracnhing strategy, Github Flow. C
   Here are CICD tools we can use. 
   * Jenkins
   * Microsoft VSTS (TFS)
   * Gitlab
+
   
 
 There are three steps to set up a basic deployment pipeline. 
