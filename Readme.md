@@ -33,7 +33,13 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 d12016fb42ce        hello               "python helloworld.py"   2 hours ago         Up 2 hours          0.0.0.0:8080->8080/tcp   boring_chaplygin
 ```
 
+  ## CICD
+  Here are CICD tools we can use. 
+  * Jenkins
+  * Microsoft VSTS (TFS)
+  * Gitlab
   
+
 There are three steps to set up a basic deployment pipeline. 
 
 ### Setting Up a Build Server
