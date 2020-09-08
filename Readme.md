@@ -35,8 +35,9 @@ d12016fb42ce        hello               "python helloworld.py"   2 hours ago    
 
   ## CICD
 
-  For a bracnhing strategy, Github Flow. C
-  Here are CICD tools we can use. 
+  We can use Github Flow for a branching strategy. 
+
+  And here are CICD tools we can use. 
   * Jenkins
   * Microsoft VSTS (TFS)
   * Gitlab
