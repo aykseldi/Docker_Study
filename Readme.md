@@ -41,13 +41,15 @@ d12016fb42ce        hello               "python helloworld.py"   2 hours ago    
    - What would be the purpose of each stage in CICD pipeline
   
 There are three steps to set up a basic deployment pipeline. 
+
     ### Setting Up a Build Server
 
-    * A build serveris needed for CI. This server will have a link to source code of the application. Also we need some command to trigger  build operation after code is loaded into server.
+    A build serveris needed for CI. This server will have a link to source code of the application. Also we need some command to trigger  build operation after code is loaded into server.
+
     ### Setting Test Suites
 
-    * We can create unit tests,integration tests and functional tests. Then we can link the builds to one another so that each is triggered by the one before it. It is better to run fastest, such as unit tests. Then if the code passes, we can run to the next suite. In this way, we can see very quickly if there's a problem, rather than waiting for slower functional tests to fail.
+    We can create unit tests,integration tests and functional tests. Then we can link the builds to one another so that each is triggered by the one before it. It is better to run fastest, such as unit tests. Then if the code passes, we can run to the next suite. In this way, we can see very quickly if there's a problem, rather than waiting for slower functional tests to fail.
     ### Adding a Deployment Step
-    
-    *  On CI server, we can add a build that will run a script to deploy  application to a testing or staging environment. We should link it to  test builds so that it only runs if all the tests pass. If our deployment process doesn't cause too much downtime, we can make this step run automatically so that your testing environment is always up to date.
+
+    On CI server, we can add a build that will run a script to deploy  application to a testing or staging environment. We should link it to  test builds so that it only runs if all the tests pass. If our deployment process doesn't cause too much downtime, we can make this step run automatically so that your testing environment is always up to date.
 
