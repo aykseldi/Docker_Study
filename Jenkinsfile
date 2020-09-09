@@ -8,7 +8,8 @@ pipeline {
                 }
             }
             steps {
-                sh 'python -m py_compile helloworld.py' 
+                sh ' docker build -t hello1 .' 
+                sh ' docker run -d -p 8080:8080 hello1' 
                 stash(name: 'compiled-results', includes: '*.py*') 
             }
         }
